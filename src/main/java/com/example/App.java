@@ -8,6 +8,11 @@ public class App {
 
     public static void main(String[] args) {
 
+        System.setProperty(
+            "webdriver.chrome.driver",
+            "/usr/bin/chromedriver"
+        );
+
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.saucedemo.com/");
@@ -25,6 +30,6 @@ public class App {
 
         System.out.println("Login Successful");
 
-        driver.quit();
+        
     }
 }
